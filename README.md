@@ -14,7 +14,7 @@ const isEmailValid = regex.test(email)
 ```
 
 ### Password
-[Try](https://regex101.com/r/0GCr4z/1)
+[Try](https://regex101.com/r/KxzkHY/1)
 ``` js
 const regex = new RegExp('^(?=.*\\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\\w\\d\\s:])([^\\s]){8,}$', '')
 const password = '^eT3rn1Ty&*!'
