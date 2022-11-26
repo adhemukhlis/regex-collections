@@ -12,3 +12,23 @@ const isEmailValid = regex.test(email)
 
 // isEmailValid will return Boolean true if email valid
 ```
+
+### Password
+[Try](https://regex101.com/r/0GCr4z/1)
+``` js
+const regex = new RegExp('^(?=.*\\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\\w\\d\\s:])([^\\s]){8,}$', '')
+const password = '^eT3rn1Ty&*!'
+const isPasswordValid = regex.test(password)
+
+// isPasswordValid will return Boolean true if password valid
+```
+or set length and without contain symbol
+```js 
+const minLength = 8
+const regex = new RegExp(`^(?=.*\\d)(?=.*[A-Z])(?=.*[a-z])([^\\s]){${minLength},}$`, '')
+const password = '^eT3rn1Ty&*!'
+const isPasswordValid = regex.test(password)
+
+// isPasswordValid will return Boolean true if password valid
+// if the password contains only symbols, it will return false
+```
